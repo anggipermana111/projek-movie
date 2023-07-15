@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Movie</title>
+  <!-- Link Menuju css -->
+  <link rel="stylesheet" href="../CSS/color.css" />
+  <link rel="stylesheet" href="../CSS/default.css" />
+  <link rel="stylesheet" href="../CSS/movie.css" />
+  <link rel="stylesheet" href="../CSS/media.css" />
+  <!-- Link box icon -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../img/tricksterikon.webp" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="head">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <div class="user">
+          <img src="../img/tricksterikon.webp" alt="Ikon" />
+        </div>
+        <div>Tricksters<span>Movie</span></div>
+      </a>
+
+      <!-- Search Box -->
+      <form action="search.html" class="search-box">
+        <input
+          type="search"
+          name="q"
+          id="search-input"
+          placeholder="Search movie..."
+          required
+        />
+        <button type="submit" class="ikon-search" for="search-input">
+          <i class="bx bx-search"></i>
+        </button>
+      </form>
+
+      <!-- User -->
+      <div class="user">
+        <img src="../img/Anggi.jpeg" alt="Foto" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Trailer -->
+    <div class="heading top">
+      <!-- Mengambil Judul Trailer Dari API Dengan JS (Default Undifined Sebelum Muncul Judul) -->
+      <h2 class="heading-title">Trailer Undifined</h2>
+    </div>
+    <div class="trailer">
+      <!-- Mengambil Video Dengan Type Trailer Dari API Dengan JS -->
+      <iframe src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Heading -->
+    <div class="heading">
+      <h2 class="heading-title">About Movie</h2>
+    </div>
+
+    <!-- Movie -->
+    <div class="movie">
+      <figure>
+        <img src="" alt="" />
+        <figcaption>
+          <h2>
+            <!-- Judul -->
+          </h2>
+          <p>
+            <!-- Rating -->
+          </p>
+          <p>
+            <!-- Rilis -->
+          </p>
+          <span>
+            <!-- Genre -->
+          </span>
+        </figcaption>
+      </figure>
+
+      <!-- Deskripsi Film -->
+      <section>
+        <div class="description">
+          <h2>
+            <!-- Judul -->
+          </h2>
+          <p>
+            <!-- Deskripsi -->
+          </p>
+        </div>
+
+        <!-- Daftar Aktor -->
+        <div class="movie-cast">
+          <h2>Movie Cast</h2>
+          <div class="content"></div>
+        </div>
+
+        <!-- Rekomendasi Film -->
+        <div class="recomendation film">
+          <h2>Recomendation Movie</h2>
+          <div class="content"></div>
+        </div>
+
+        <!-- Similar Film -->
+        <div class="similar film">
+          <h2>Similar Movie</h2>
+          <div class="content"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&#169; AnggiPermana All Right Reserved</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="../JS/function.js"></script>
+  <script src="../JS/movie.js"></script>
+</body>
+
+</html>
